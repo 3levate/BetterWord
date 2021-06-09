@@ -42,16 +42,12 @@
    <center>
       <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <TextArea maxHeight="430.0" maxWidth="1100.0" minWidth="100.0" prefHeight="780.0" prefWidth="1054.0" promptText="test" StackPane.alignment="CENTER">
+            <Text id="sixsixsix" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tortor ante, mattis &#10;id pharetra vitae, pellentesque in augue. Praesent nulla sem, porttitor quis lorem nec,&#10;luctus egestas ipsum. Fusce et lacus in enim venenatis pellentesque in vel nisl. Nulla">
                <font>
                   <Font size="40.0" />
                </font>
-            </TextArea>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra, sapien ac viverra convallis, urna eros finibus&#10;felis, ut venenatis metus sem et diam. Sed ut tortor mattis, bibendum diam in, aliquet ligula. Fusce laoreet est id orci efficitur, &#10;at venenatis velit aliquet. Aliquam erat volutpat. Duis dui est, &#10;vehicula sed ante non, fermentum suscipit enim. &#10;Vivamus risus orci, hendrerit sit amet pretium eu, pharetra ac dolor. Suspendisse sed eros euismod felis scelerisque consequat." wrappingWidth="1083.572265625" StackPane.alignment="CENTER">
-               <font>
-                  <Font name="Calibri Light" size="40.0" />
-               </font>
             </Text>
+            <TextArea id="inputArea" opacity="0.29" prefHeight="200.0" prefWidth="200.0" />
          </children>
       </StackPane>
    </center>

@@ -3,6 +3,7 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.effect.Bloom?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
@@ -41,11 +42,12 @@
    <center>
       <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tortor ante, mattis &#10;id pharetra vitae, pellentesque in augue. Praesent nulla sem, porttitor quis lorem nec,&#10;luctus egestas ipsum. Fusce et lacus in enim venenatis pellentesque in vel nisl. Nulla">
+            <Text id="sixsixsix" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tortor ante, mattis &#10;id pharetra vitae, pellentesque in augue. Praesent nulla sem, porttitor quis lorem nec,&#10;luctus egestas ipsum. Fusce et lacus in enim venenatis pellentesque in vel nisl. Nulla">
                <font>
                   <Font size="40.0" />
                </font>
             </Text>
+            <TextArea id="inputArea" opacity="0.29" prefHeight="200.0" prefWidth="200.0" />
          </children>
       </StackPane>
    </center>
