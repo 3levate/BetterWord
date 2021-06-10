@@ -19,15 +19,10 @@ import java.util.Scanner;
 
 public class Main extends Application {
 
-    private TextArea inputArea;
-
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
 //        root.getStylesheets().add("package/css1.css");
-
-
-        System.out.println(inputArea);
 
         primaryStage.setTitle("BetterWord");
         primaryStage.setScene(new Scene(root, 300, 275));
