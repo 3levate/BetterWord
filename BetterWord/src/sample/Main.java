@@ -10,12 +10,13 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.TextArea;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.util.Scanner;
-
 
 public class Main extends Application {
 
@@ -25,8 +26,11 @@ public class Main extends Application {
 //        root.getStylesheets().add("package/css1.css");
 
         primaryStage.setTitle("BetterWord");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        Scene scene = new Scene(root, 1920, 1080);
+
+        primaryStage.setScene(scene);
         primaryStage.show();
+
     }
 
 

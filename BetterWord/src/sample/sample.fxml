@@ -43,12 +43,12 @@
    <center>
       <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Text id="sixsixsix" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem">
+            <Text fx:id="sixsixsix" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem">
                <font>
                   <Font size="40.0" />
                </font>
             </Text>
-            <TextArea id="inputArea" disable="true" opacity="0.29" prefHeight="200.0" prefWidth="200.0" />
+            <TextArea fx:id="inputArea" disable="true" opacity="0.29" prefHeight="200.0" prefWidth="200.0" />
          </children>
       </StackPane>
    </center>
@@ -56,6 +56,6 @@
       <Button id="booton" fx:id="booton" mnemonicParsing="false" onAction="#btnClick" text="Button" BorderPane.alignment="CENTER" />
    </left>
    <right>
-      <TextArea id="input" prefHeight="200.0" prefWidth="200.0" promptText="give me input" BorderPane.alignment="CENTER" />
+      <TextArea fx:id="input" prefHeight="200.0" prefWidth="200.0" promptText="give me input" BorderPane.alignment="CENTER" />
    </right>
 </BorderPane>
