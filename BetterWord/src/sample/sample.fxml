@@ -41,21 +41,21 @@
       <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
    </bottom>
    <center>
-      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <StackPane fx:id="typingArea" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fx:id="sixsixsix" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem">
+            <Text fx:id="sixsixsix" strokeType="OUTSIDE" strokeWidth="0.0" text="urmom">
                <font>
                   <Font size="40.0" />
                </font>
             </Text>
-            <TextArea fx:id="inputArea" disable="true" opacity="0.29" prefHeight="200.0" prefWidth="200.0" />
+            <TextArea fx:id="inputArea" onKeyPressed="#detectInputAreaKeyEvent" opacity="0.29" prefHeight="200.0" prefWidth="200.0" />
          </children>
       </StackPane>
    </center>
    <left>
-      <Button id="booton" fx:id="booton" mnemonicParsing="false" onAction="#btnClick" text="Button" BorderPane.alignment="CENTER" />
+      <Button id="booton" fx:id="booton" disable="true" mnemonicParsing="false" onAction="#btnClick" text="Button" visible="false" BorderPane.alignment="CENTER" />
    </left>
    <right>
-      <TextArea fx:id="input" prefHeight="200.0" prefWidth="200.0" promptText="give me input" BorderPane.alignment="CENTER" />
+      <TextArea fx:id="input" disable="true" prefHeight="200.0" prefWidth="200.0" promptText="give me input" visible="false" BorderPane.alignment="CENTER" />
    </right>
 </BorderPane>
