@@ -28,9 +28,6 @@ public class Controller extends Main implements Initializable {
     private Text sixsixsix;
 
     @FXML
-    private StackPane typingArea;
-
-    @FXML
     private void btnClick(ActionEvent event) {
         System.out.println(input.getText());
 
@@ -46,14 +43,26 @@ public class Controller extends Main implements Initializable {
     @FXML
     private void detectInputAreaKeyEvent(KeyEvent event) {
         char[] splitter = textToType.toCharArray();
-        for (int i = splitter.length; i < )
-        if (event.getText().equals()) {
-            System.out.println("working");
-
+        System.out.println("index splitter [0] returned: " + splitter[0]);
+        System.out.println("event.getText returned: " + event.getText());
+        if (event.getText().equals(splitter[0])) {
+            System.out.println("right letter");
         }
         else {
-            System.out.println("wrong key");
+            System.out.println("wrong letter");
         }
+//        for (int i = 0; i < splitter.length; i++) {
+//            if (event.getText().equals(splitter[i])) {
+//                System.out.println("right letter");
+//                break;
+//            }
+//            else {
+//                System.out.println(splitter[i]);
+//                System.out.println("wrong letter");
+//                break;
+//            }
+//        }
+
     }
 
     @FXML

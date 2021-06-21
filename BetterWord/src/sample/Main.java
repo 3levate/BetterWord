@@ -24,13 +24,12 @@ import java.util.Scanner;
 
 public class Main extends Application {
 
-    @FXML
-    private StackPane typingArea;
+    @FXML private StackPane typingArea;
 
     @FXML
     private Text sixsixsix;
 
-    String textToType = "urmom";
+    String textToType = "test";
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -45,6 +44,7 @@ public class Main extends Application {
         primaryStage.show();
 
 //        typingArea.addEventFilter(KeyEvent.KEY_PRESSED, new EventHandler<KeyEvent>() {
+//
 //            @Override
 //            public void handle(KeyEvent keyEvent) {
 //
@@ -54,9 +54,9 @@ public class Main extends Application {
 //        scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
 //            @Override
 //            public void handle(KeyEvent keyEvent) {
-//                if (keyEvent.getText().equals(currentLetter )) {
+//                if (keyEvent.getText().equals("t")) {
 //                    System.out.println("right letter pressed");
-//                    sixsixsix.get
+//                    sixsixsix.setStyle("-fx-fill: blue");
 //                }
 //                else {
 //                    System.out.println("other letter was pressed");
