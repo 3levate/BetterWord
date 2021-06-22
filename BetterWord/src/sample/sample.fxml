@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.StackPane?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
+<?import org.fxmisc.richtext.InlineCssTextArea?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <top>
@@ -41,19 +40,15 @@
       <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
    </bottom>
    <center>
-      <StackPane fx:id="typingArea" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <StackPane fx:id="typingArea" id="styleTypingArea" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Text fx:id="sixsixsix" strokeType="OUTSIDE" strokeWidth="0.0" text="urmom">
-               <font>
-                  <Font size="40.0" />
-               </font>
-            </Text>
-            <TextArea fx:id="inputArea" onKeyPressed="#detectInputAreaKeyEvent" opacity="0.29" prefHeight="200.0" prefWidth="200.0" />
+             <InlineCssTextArea fx:id="typingText"></InlineCssTextArea>
+            <TextArea fx:id="inputArea" onKeyPressed="#detectInputAreaKeyEvent" opacity="0.0" prefHeight="200.0" prefWidth="200.0" />
          </children>
       </StackPane>
    </center>
    <left>
-      <Button id="booton" fx:id="booton" disable="true" mnemonicParsing="false" onAction="#btnClick" text="Button" visible="false" BorderPane.alignment="CENTER" />
+      <Button id="booton" fx:id="booton" disable="true" mnemonicParsing="false" text="Button" visible="false" BorderPane.alignment="CENTER" />
    </left>
    <right>
       <TextArea fx:id="input" disable="true" prefHeight="200.0" prefWidth="200.0" promptText="give me input" visible="false" BorderPane.alignment="CENTER" />

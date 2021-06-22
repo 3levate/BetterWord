@@ -1,70 +1,125 @@
 package sample;
 
 import javafx.application.Application;
-import javafx.concurrent.Task;
-import javafx.concurrent.WorkerStateEvent;
-import javafx.event.Event;
-import javafx.event.EventHandler;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.MenuBar;
-import javafx.scene.control.TextArea;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.StackPane;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
-
-import java.io.IOException;
-import java.util.Scanner;
 
 public class Main extends Application {
 
-    @FXML private StackPane typingArea;
-
-    @FXML
-    private Text sixsixsix;
-
-    String textToType = "test";
+    char nextLine = '\n';
+    String textToType = "as " +
+"his " +
+"that " +
+"he " +
+"was " +
+"for " +
+"on " +
+"are " +
+"with " +
+"they " +
+"be " +
+"at " +
+"one " +
+"have " +
+"this " +
+"from " +
+"by " +
+"hot " +
+"word " +
+"but" + nextLine +
+"what " +
+"some " +
+"is " +
+"it " +
+"you " +
+"or " +
+"had " +
+"the " +
+"of " +
+"to " +
+"and " +
+"a " +
+"in " +
+"we " +
+"can " +
+"out " +
+"other " +
+"were " +
+"which " +
+"do " +
+"their " +
+"time " +
+"if" + nextLine +
+"will " +
+"how " +
+"said " +
+"an " +
+"each " +
+"tell " +
+"does " +
+"set " +
+"three " +
+"want " +
+"air " +
+"well " +
+"also " +
+"play " +
+"small " +
+"end " +
+"put " +
+"home " +
+"read " +
+"hand " +
+"port " +
+"large " +
+"spell " +
+"add " +
+"even" + nextLine +
+"land " +
+"here " +
+"must " +
+"big " +
+"high " +
+"such " +
+"follow " +
+"act " +
+"why " +
+"ask " +
+"men " +
+"change " +
+"went " +
+"light " +
+"kind " +
+"off " +
+"need " +
+"house " +
+"picture " +
+"try " +
+"us " +
+"again " +
+"animal " +
+"point " +
+"mother " +
+"world " +
+"near " +
+"build " +
+"self " +
+"earth " +
+"father";
 
     @Override
     public void start(Stage primaryStage) throws Exception{
 
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-//        root.getStylesheets().add("package/css1.css");
+        root.getStylesheets().add("sample/css1.css");
 
         primaryStage.setTitle("BetterWord");
-        Scene scene = new Scene(root, 1920, 1080);
+        Scene scene = new Scene(root, 1920, 1010);
 
         primaryStage.setScene(scene);
         primaryStage.show();
-
-//        typingArea.addEventFilter(KeyEvent.KEY_PRESSED, new EventHandler<KeyEvent>() {
-//
-//            @Override
-//            public void handle(KeyEvent keyEvent) {
-//
-//                System.out.println("working from controller");
-//            }
-//        });
-//        scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
-//            @Override
-//            public void handle(KeyEvent keyEvent) {
-//                if (keyEvent.getText().equals("t")) {
-//                    System.out.println("right letter pressed");
-//                    sixsixsix.setStyle("-fx-fill: blue");
-//                }
-//                else {
-//                    System.out.println("other letter was pressed");
-//                }
-//            }
-//        });
-
-
     }
 
 
