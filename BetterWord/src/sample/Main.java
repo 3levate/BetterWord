@@ -6,9 +6,14 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class Main extends Application {
 
     char nextLine = '\n';
+    String[] textTypeArray = {"as ", "what ", "his ", "that ", "he ", "was ", "for ", "on ", "are ", "with ", "they ", "be ", "at ", "one ", "have ", "this ", "from ", "by ", "hot ", "word ", "but "};
     String textToType =
             "as " + "his " + "that " + "he " + "was " + "for " + "on " + "are " + "with " + "they " + "be " + "at " + "one " + "have " + "this " + "from " + "by " + "hot " + "word " + "but " + nextLine +
             "what " + "some " + "is " + "it " + "you " + "or " + "had " + "the " + "of " + "to " + "and " + "a " + "in " + "we " + "can " + "out " + "other " + "were " + "which " + "do " + "their " + nextLine +
