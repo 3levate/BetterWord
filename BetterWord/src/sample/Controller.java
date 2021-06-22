@@ -15,7 +15,6 @@ public class Controller extends Main implements Initializable {
     int i = 0;
     char space = ' ';
 
-
     @FXML
     private void detectInputAreaKeyEvent(KeyEvent event) {
         char[] splitter = textToType.toCharArray();
